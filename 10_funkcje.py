@@ -35,3 +35,26 @@ def odejmij(a,b=1):
 print(odejmij(2,2))
 print(odejmij(2,b=3))
 print(odejmij(2))
+
+print("----------------------------------------------")
+
+def word_check(mystring):
+    return 'alaaaaa' in mystring
+
+string = "Szla dzieweczka do laseczka, szla i szla"
+print(word_check(string))
+
+print("----------------------------------------------")
+
+def code_maker(mystring):
+    lista = []
+    lista1 = ['a','e','i','o','u']
+    for letter in mystring:
+        if letter.lower() in lista1:
+            lista.append('x')
+        else:
+            lista.append(letter)
+    print("".join(lista))
+
+
+code_maker("Ala ma kota")

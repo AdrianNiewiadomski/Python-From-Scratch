@@ -2,9 +2,20 @@ print("Hello world!")
 
 # This is comment
 
-print(2+2)
-print(8**2)
-print(2+2*10)
+print("----------------------------------- operatory arytmetyczne -----------------------------------")
+
+print("2+2 = ", 2+2)
+print("2-2 = ", 2-2)
+print("2*2 = ", 2*2)
+print("2/2 = ", 2/2)
+print("8^2 = ", 8**2)
+print("8%2 = ", 8%2)
+print("7^2 = ", 7%2)
+
+print("--------------------- Python zna kolejność wykonywania działań + nawiasy ---------------------")
+
+print("2+2*10 =", 2+2*10)
+print("(2+2)*10 = ", (2+2)*10)
 
 print("----------------------------------- Zmienne + Dynamic typing -----------------------------------")
 
