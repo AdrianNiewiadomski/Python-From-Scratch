@@ -58,3 +58,20 @@ def code_maker(mystring):
 
 
 code_maker("Ala ma kota")
+
+print("---------------- Zadanie ----------------")
+#Zadanie. Napisz funkcję, która sprawdzi czy w zadanej liście znajduje się sekwencja [1,2,3].
+#Zwróć True jeśli tak.
+
+#Hint użyj cięcia listy i pętli for
+
+def znajdz_123(lista):
+    for i in range(len(lista)-2):
+        if lista[i:i+3] == [1,2,3]:
+            print(lista[i:i+3])
+            return True
+    return False
+
+print(znajdz_123([1,2,3,4,5,6,22,-3]))
+print(znajdz_123([2,2,3,4,1,1,2,-3]))
+print(znajdz_123([2,1,3,4,5,6,22,-3,1,2,3]))
