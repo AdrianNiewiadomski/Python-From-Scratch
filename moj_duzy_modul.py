@@ -9,3 +9,5 @@ def iloczyn(a,b):
 
 def iloraz(a,b):
     return a/b
+
+zmienna_w_module = 2.74
