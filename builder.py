@@ -24,7 +24,7 @@ class Dom:
             self.adres = adres
             return self
 
-        def ustaw_liczba_pieter(self, liczba_pieter):
+        def ustaw_liczbe_pieter(self, liczba_pieter):
             self.liczba_pieter = liczba_pieter
             return self
 
@@ -39,7 +39,7 @@ class Dom:
 def main():
     moj_dom = Dom.Builder()\
         .ustaw_adres('Jakis_adres')\
-        .ustaw_liczba_pieter(2)\
+        .ustaw_liczbe_pieter(2)\
         .ustaw_kolor('szary')\
         .build()
     moj_dom.opisz_dom()
