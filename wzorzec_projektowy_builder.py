@@ -5,7 +5,7 @@ class Dom:
         self.kolor = kolor
 
     def opisz_dom(self):
-        print("Twoj dom znajduje sie przy ul. {}, ma {} pietra i jest {}."
+        print('Twoj dom znajduje sie przy ul. {}, ma {} pietra i jest {}.'
               .format(self.adres, self.liczba_pieter, self.kolor))
 
     def metoda1(self):
@@ -16,9 +16,9 @@ class Dom:
 
     class Builder:
         def __init__(self):
-            self.adres = ""
+            self.adres = ''
             self.liczba_pieter = 0
-            self.kolor = ""
+            self.kolor = ''
 
         def ustaw_adres(self, adres):
             self.adres = adres
@@ -45,5 +45,5 @@ def main():
     moj_dom.opisz_dom()
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
