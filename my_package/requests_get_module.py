@@ -4,6 +4,8 @@ import requests
 def get_current_weather():
     response = requests.get('http://api.openweathermap.org/data/2.5/forecast?q=your_city,your_country&APPID=your_appid')
     if response.ok:
+        return response.json()['current']
+    else:
         return response.json()
 
 
