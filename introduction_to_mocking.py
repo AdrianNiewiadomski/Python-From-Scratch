@@ -1,8 +1,8 @@
+import json
 import unittest
 from unittest.mock import patch
-import json
 
-from my_package.requests_get_module import get_current_weather
+from requests_get_example import get_current_weather
 
 
 class TestMyBigModuleMethods(unittest.TestCase):
