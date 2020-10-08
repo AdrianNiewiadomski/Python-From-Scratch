@@ -107,7 +107,15 @@ print('people: ', people)
 print('people[\'John\']: ', people['John'])
 print('people[\'John\'][\'age\']: ', people['John']['age'])
 
-print('\nSome other useful methods are keys, values and items')
+print('\nA variable stores a reference to dictionary.')
+my_dict = {'color': 'red'}
+print('my_dict: ', my_dict)
+print('Let\'s assign value stored by variable my_dict to other_dict.')
+other_dict = my_dict
+other_dict['color'] = 'blue'
+print('my_dict after update of the other_dict: ', my_dict)
+
+print('\nSome useful methods are keys, values and items')
 print('people: ', people)
 print('people.keys(): ', people.keys())
 print('people.values(): ', people.values())
