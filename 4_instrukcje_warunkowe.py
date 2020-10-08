@@ -10,12 +10,12 @@ else:
 
 print("-----------------------------------------------------")
 
-login_correct = True
-password_correct = True
-if login_correct and password_correct:
+is_login_correct = True
+is_password_correct = True
+if is_login_correct and is_password_correct:
     print("Access granted!")
 else:
-    print("Podaj poprawny login i haslo!")
+    print("Incorrect login or password!")
 
 print("-----------------------------------------------------")
 
