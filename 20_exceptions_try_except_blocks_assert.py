@@ -23,7 +23,8 @@ def main():
     print('You may also use exceptions during a debug process.')
     config = {
         'a': 1,
-        'b': 2
+        'b': 2,
+        # 'host_ip': '127.0.0.1'
     }
     print('\nLets say some other module provided a config: ', config)
     print('To make sure a required field \'host_ip\' is present in config use an assert keword.')
