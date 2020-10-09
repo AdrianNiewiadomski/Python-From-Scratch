@@ -17,6 +17,19 @@ def main():
     except ZeroDivisionError:
         print('Thou Shalt Not Divide by Zero! ;)')
 
+    print('\nSometimes you want to raise an exception.')
+    print('For instance to warn a fellow programmer about incorrect usage of your module.')
+    print('Other case may be to make sure that some requirements are met before further run of program.')
+    print('You may also use exceptions during a debug process.')
+    config = {
+        'a': 1,
+        'b': 2
+    }
+    print('\nLets say some other module provided a config: ', config)
+    print('To make sure a required field \'host_ip\' is present in config use an assert keword.')
+    print('A lack of \'host_ip\' will result in following exception: ')
+    assert 'host_ip' in config, 'You must provide a host ip in the config!'
+
 
 if __name__ == '__main__':
     main()
