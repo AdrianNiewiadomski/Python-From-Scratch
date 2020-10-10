@@ -57,3 +57,10 @@ print(indeks)
 
 indeks="Szla dzieweczka do laseczka, szla i szla".index("szla")
 print(indeks)
+
+print('---------------- zip function ----------------')
+my_list_1 = [1, 2, 3]
+my_list_2 = ['a', 'b', 'c']
+my_zip_object = zip(my_list_1, my_list_2)
+print('A zip object is an iterator and may be converted into list.')
+print(list(my_zip_object))
