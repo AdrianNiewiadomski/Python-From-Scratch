@@ -4,9 +4,9 @@
 
 
 # Importujemy moduł
-import moj_modul
+import my_module
 # używamy funkcji za pomocą składni nazwa_modulu.nazwa_funkcji()
-print("2+2 =", moj_modul.dodaj(2,2))
+print("2+2 =", my_module.dodaj(2, 2))
 
 
 # Jeśli z dużego modułu potrzebuję tylko kilku funkcji
