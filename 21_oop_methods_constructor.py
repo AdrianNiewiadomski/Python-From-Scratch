@@ -72,7 +72,3 @@ print('We may access fields by <name_of_object>.<name_of_field>')
 print('my_rectangle.length: ', my_rectangle.length)
 print('Similarly we may call a method.')
 print('area: ', my_rectangle.calculate_area())
-
-
-
-
