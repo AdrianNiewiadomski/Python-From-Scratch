@@ -35,6 +35,7 @@ print('self is usually a first argument of all methods that are declared.')
 
 
 print('\nWe may now instantiate an object of class Car by calling a method Car.')
+print('The method Car is in fact a constructor. However this will be discussed later.')
 fiat = Car()
 print('Now check the class of the car')
 print('type(fiat)): ', type(fiat))
@@ -42,31 +43,36 @@ print('We may call a method use_horn by fiat.use_horn()')
 fiat.use_horn()
 
 
+print('\nWe may create various classes in our programs. Let\'s create a class Rectangle.')
+print('All rectangles have length and width. This will be our fields (variables of the object).')
+print('This time we will define a constructor method (__init__).')
+print('It is convenient because we want to establish length and width as we create object.')
+print('All fields should be initiated in the constructor.')
+print('\nNotice that constructor has two arguments (length and width).')
+print('These are used to set values of fields (self.length and self.width).')
+print('Let\'s define a method that calculate an area of our rectangle.')
+print('Notice that we do not have to pass any arguments to the method.')
+print('This is because an object itself will have an access to its fields.')
 
 
-#Klasy mogą być bardzo różne:
-class Prostokat:
+class Rectangle:
+    def __init__(self, length, width):
+        print('Creating an object of class Rectangle.')
+        self.length = length
+        self.width = width
 
-    #konstruktor - funkcja tworzaca obiekt
-    def __init__(self, a, b):
-        print(f"tworze obiekt klasy Prostokat o polach a={a} i b={b}")
-        self.a = a
-        self.b = b
+    def calculate_area(self):
+        return self.length * self.width
 
-    def wyznacz_pole(self):
-        print("pole = ", self.a * self.b)
 
-    def wyznacz_obwod(self):
-        print("obwod = ", 2*(self.a + self.b))
+print('\nWe create an object by calling constructor and passing required arguments')
+my_rectangle = Rectangle(2, 3)
+print('Notice we do not write __init__ when we create an object.')
+print('We may access fields by <name_of_object>.<name_of_field>')
+print('my_rectangle.length: ', my_rectangle.length)
+print('Similarly we may call a method.')
+print('area: ', my_rectangle.calculate_area())
 
-#tworzymy obiekt klasy Prostokat (wywolujemy konstruktor)
-prostokacik = Prostokat(2,3)
-#zmienne należące do obiektów to pola lub inaczej atrybuty.
-# Dostęp do pól możemy uzyskać przez:
-print("prostokacik.a = ", prostokacik.a)
-#wywolujemy metody prostokacika
-prostokacik.wyznacz_obwod()
-prostokacik.wyznacz_pole()
 
 
 
