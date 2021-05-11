@@ -17,7 +17,7 @@ class TestMyBigModuleMethods(unittest.TestCase):
         )
 
     def test_get_current_weather(self):
-        with open('my_package/example_of_api_response.json', 'r') as file:
+        with open('data/example_of_api_response.json', 'r') as file:
             json_response = json.loads(file.read())
 
         with patch('requests.get') as mock:
