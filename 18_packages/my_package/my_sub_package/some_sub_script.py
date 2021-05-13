@@ -1,6 +1,6 @@
 def fun():
-    print('fun!')
+    print('function fun has been called!')
 
 
 def fun2():
-    print('more fun!')
+    print('function fun2 has been called!')
