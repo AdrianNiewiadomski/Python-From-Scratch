@@ -1,17 +1,18 @@
-lista = []
-print(lista)
-print(type(lista))
+# Data structures like list allow to store multiple items.
+my_list = []
+print("my_list: ", my_list)
+print("type(my_list): ", type(my_list))
 
 print("-----------------------")
-lista = ["ser", "mleko", "parowki"]
+lista = ["item 1", "item 2", "item 3"]
 print(lista)
 print(lista[0])
 print(lista[0][0])
 
 print(lista[:2])
 
-print("-----------------------")
-lista.append("Szynka")
+print("We can add items to list with append method")
+lista.append("item 4")
 print(lista)
 
 print("-----------------------")
@@ -23,7 +24,7 @@ lista.clear()
 print(lista)
 print(lista2)
 
-print("-----------------------")
+print("copy.copy(lista) -----------------------")
 import copy
 lista = ["ser", "mleko", "parowki"]
 lista2 = copy.copy(lista)
@@ -48,8 +49,8 @@ print("-----------------------")
 lista = [1, 2.5, "parowki"]
 print(lista)
 
-print("-----------------------")
-lista.insert(1,3.14)
+print("lista.insert(index, object) -----------------------")
+lista.insert(2, 3.14)
 print(lista)
 
 print("-----------------------")
@@ -64,3 +65,7 @@ li3 = [6,7,8]
 li = [li1, li2, li3]
 print(li)
 print(len(li))
+
+print("-----------------------")
+lista = [1, 1, 1]
+print(lista)
