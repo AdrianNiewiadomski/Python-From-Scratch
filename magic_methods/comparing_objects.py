@@ -36,5 +36,12 @@ if __name__ == "__main__":
 
     # Everyone knows that a bicycle is not a car ;)
     print("Q: Is a bike a car? A:", bike == toyota)
+    # And of course, a car is not a number.
+    print("Q: Is car a number? A:", toyota == 1)
 
+    # Let us compare cars!
+    print("Q: Does Toyota have the same brand as Mercedes? A:", toyota == mc1)
+    print("Q: Do you remember that we don't care about color? A:", mc1 == mc2)
 
+    # Since an eq method has not been defined for class Bicycle, the Python cannot compare bikes!
+    print("Q: Can I compare bikes? A:", bike == bike2)
