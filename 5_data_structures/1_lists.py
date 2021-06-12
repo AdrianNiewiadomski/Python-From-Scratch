@@ -1,13 +1,12 @@
 # Data structures like list allow to store multiple items.
 my_list = []
 print("my_list: ", my_list)
-print("type(my_list): ", type(my_list))
 
 print("-----------------------")
-lista = ["item 1", "item 2", "item 3"]
-print(lista)
-print(lista[0])
-print(lista[0][0])
+my_list = ["item 1", "item 2", "item 3"]
+print(my_list)
+print(my_list[0])
+print(my_list[0][0])
 
 print(lista[:2])
 
