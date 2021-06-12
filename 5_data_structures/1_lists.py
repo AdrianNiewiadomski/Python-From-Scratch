@@ -1,27 +1,24 @@
-# Data structures like list allow to store multiple items.
+# Data structures like lists allow storing multiple items.
+# A list may be created like this:
 my_list = []
 print("my_list: ", my_list)
 
-print("-----------------------")
+# Or, you can create it with stored values:
 my_list = ["item 1", "item 2", "item 3"]
-print(my_list)
+print("my_list: ", my_list)
 print(my_list[0])
 print(my_list[0][0])
 
-print(lista[:2])
-
-print("We can add items to list with append method")
-lista.append("item 4")
-print(lista)
+print(my_list[:2])
 
 print("-----------------------")
-lista2 = lista
-print(lista)
-print(lista2)
+my_list2 = my_list
+print(my_list2)
+print(my_list2)
 
-lista.clear()
-print(lista)
-print(lista2)
+my_list2.clear()
+print(my_list2)
+print(my_list2)
 
 print("copy.copy(lista) -----------------------")
 import copy
