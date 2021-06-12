@@ -7,6 +7,9 @@ print("my_list: ", my_list)
 my_list = ["item 1", "item 2", "item 3"]
 print("my_list: ", my_list)
 
+# A list may also be created with a so-called list comprehension.
+# However, this will be presented in a different lesson.
+
 # You may access an element of list with the following line:
 print("my_list[0]: ", my_list[0])
 
