@@ -23,30 +23,33 @@ print("\nmy_list with changed item: ", my_list)
 # However an attempt to add an item to list:
 # my_list[3] = "item 4"
 # will result in an IndexError with the message: list assignment index out of range
-# To add an additional item to list you have to use a method append
+# In order to be able to add an additional element to the list, you must use a method append.
 
-# The variable my_list stores a reference to an object
-my_list2 = my_list
+# The variable my_list stores a reference to a list object.
+# Therefore, improper use can lead to unexpected results.
+my_list_2 = my_list
 print("\nmy_list: ", my_list)
-print("my_list2: ", my_list2)
+print("my_list2: ", my_list_2)
 
 my_list[0] = "A new item"
-print("my_list after changing first item: ", my_list)
-print("my_list2: ", my_list2)
+print("my_list after changing the first item: ", my_list)
+print("my_list_2 after changing the first item in my_list: ", my_list_2)
+# Change in one list results in a change in the other.
+# This is because there are no two lists. Both variables store a reference to the same list!
 # To copy values instead of reference to a new variable you may use a method copy.
 
-# Unlike in C++ or in Java a list may store data of different types
+# A list may store data of different types:
 my_list = [1, 2.5, "item"]
 print("\nmy_list: ", my_list)
 
-# A list may contain other data structures like lists, dictionaries etc.
+# A list may contain other data structures like lists, dictionaries, etc.
 li1 = [0, 1, 2]
 li2 = [3, 4, 5]
 li3 = [6, 7, 8]
 li = [li1, li2, li3]
 print("li: ", li)
-print("A length of this list is: ", len(li))
+print("The length of this list is: ", len(li))
 
 # List may hold non-unique values:
 my_list = [1, 1, 1]
-print("\nMy non-unique list: ", my_list)
+print("\nList with repeating elements: ", my_list)
