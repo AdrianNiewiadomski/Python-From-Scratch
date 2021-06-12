@@ -6,19 +6,23 @@ print("my_list: ", my_list)
 # Or, you can create it with stored values:
 my_list = ["item 1", "item 2", "item 3"]
 print("my_list: ", my_list)
-print(my_list[0])
-print(my_list[0][0])
+
+# You may access an element of list with the following line:
+print("my_list[0]: ", my_list[0])
+
+
+print("my_list[0][0]: ", my_list[0][0])
 
 print(my_list[:2])
 
 print("-----------------------")
 my_list2 = my_list
-print(my_list2)
-print(my_list2)
+print("my_list: ", my_list)
+print("my_list2: ", my_list2)
 
-my_list2.clear()
-print(my_list2)
-print(my_list2)
+my_list2[0] = "A new item"
+print("my_list: ", my_list)
+print("my_list2: ", my_list2)
 
 print("copy.copy(lista) -----------------------")
 import copy
