@@ -11,6 +11,7 @@ def read_from_table(cursor):
     result = cursor.fetchone()
     # If no row meets the search condition, the fetchone method will return None.
     print("result: ", result)
+    # To get more rows use cursor.fetchall(). This method returns a list.
 
 
 def execute_query(fun):

@@ -5,4 +5,4 @@ class Book:
         self.published_date = published_date
 
     def __repr__(self):
-        return f"Book('{self.title}' by {self.author}, {self.published_date}."
+        return f"Book('{self.title}', {self.author}, {self.published_date}."
