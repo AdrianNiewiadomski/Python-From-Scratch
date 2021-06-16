@@ -15,7 +15,7 @@ def create_database():
         CREATE TABLE books (
             author text,
             title text,
-            published_date text
+            published_date integer
         )
     """
     cursor.execute(create_query)
@@ -28,5 +28,6 @@ def create_database():
 
 
 if __name__ == "__main__":
-    # sqlite3.OperationalError: table books already exists
+    # If you run this code twice you will get an error: sqlite3.OperationalError: table books already exists
+    # This means that the table has been created.
     create_database()
