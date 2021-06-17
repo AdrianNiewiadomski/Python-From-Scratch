@@ -6,6 +6,3 @@ class Book:
 
     def to_tuple(self):
         return self.author, self.title, self.published_date
-
-    def __repr__(self):
-        return f"Book('{self.author}', '{self.title}', {self.published_date})"
