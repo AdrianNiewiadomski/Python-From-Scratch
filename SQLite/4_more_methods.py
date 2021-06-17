@@ -64,3 +64,5 @@ if __name__ == "__main__":
 
     remove_book("The Name of the Wind")
     print("All books are: ", get_all_books())
+
+    in_memory_database_connection.close()
