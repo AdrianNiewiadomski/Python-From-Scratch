@@ -20,8 +20,8 @@ def populate_database_named_placeholders(cursor, **kwargs):
                    {"author": book.author, "title": book.title, "year": book.published_date})
 
 
-def read_from_table(cursor, **kwargs):
-    cursor.execute("SELECT * FROM books")
+def search_by_author(cursor, **kwargs):
+    cursor.execute("SELECT * FROM books WHERE author=?", (kwargs["author"], ))
     result = cursor.fetchall()
     print("result: ", result)
 
@@ -42,4 +42,4 @@ if __name__ == "__main__":
 
     # execute_query(populate_database_question_marks, book=book_1)
     # execute_query(populate_database_named_placeholders, book=book_2)
-    execute_query(read_from_table)
+    execute_query(read_from_table, author="Martin")

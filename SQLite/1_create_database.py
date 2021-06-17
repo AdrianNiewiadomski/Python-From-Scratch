@@ -3,6 +3,7 @@ import sqlite3
 
 def create_database():
     # in_memory_database_connection = sqlite3.connect(":memory:")
+    # The in-memory database is created every time this code is run.
 
     file_database_connection = sqlite3.connect("book.db")
     # If you run this script after adding the line above the file "book.db" will be created.
