@@ -20,8 +20,19 @@ def populate_database_named_placeholders(cursor, **kwargs):
                    {"author": book.author, "title": book.title, "year": book.published_date})
 
 
+def populate_database_from_book(cursor, **kwargs):
+    # We can use a method instead write manually every field of our object.
+    cursor.execute("INSERT INTO books VALUES (?, ?, ?)", kwargs['book'].to_tuple())
+
+
 def search_by_author(cursor, **kwargs):
     cursor.execute("SELECT * FROM books WHERE author=?", (kwargs["author"], ))
+    result = cursor.fetchall()
+    print("result: ", result)
+
+
+def search_with_limit(cursor, **kwargs):
+    cursor.execute("SELECT * FROM books LIMIT :limit", {"limit": kwargs["limit"]})
     result = cursor.fetchall()
     print("result: ", result)
 
@@ -39,7 +50,11 @@ def execute_query(fun, **kwargs):
 if __name__ == "__main__":
     book_1 = Book("Rowling", "Harry Potter", 1997)
     book_2 = Book("Martin", "A Game of Thrones", 1996)
+    book_3 = Book("Rothfuss", "The Name of the Wind", 2007)
 
     # execute_query(populate_database_question_marks, book=book_1)
     # execute_query(populate_database_named_placeholders, book=book_2)
-    execute_query(read_from_table, author="Martin")
+    # execute_query(populate_database_from_book, book=book_3)
+
+    execute_query(search_by_author, author="Martin")
+    execute_query(search_with_limit, limit=5)

@@ -4,5 +4,8 @@ class Book:
         self.title = title
         self.published_date = published_date
 
+    def to_tuple(self):
+        return self.author, self.title, self.published_date
+
     def __repr__(self):
-        return f"Book('{self.title}', {self.author}, {self.published_date}."
+        return f"Book('{self.author}', '{self.title}', {self.published_date})"
