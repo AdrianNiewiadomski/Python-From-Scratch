@@ -18,3 +18,8 @@ def my_function(func):
 
 print("\nAnd the function may be called with my_function(print_hello):")
 my_function(print_hello)
+"""This will result in printing:
+******************************************
+Hello World!
+******************************************
+"""
