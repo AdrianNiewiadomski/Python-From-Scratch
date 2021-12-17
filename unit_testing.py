@@ -1,5 +1,5 @@
 import unittest
-from my_big_module import calculate_sum as my_sum
+from data.my_big_module import calculate_sum as my_sum
 
 
 class TestMyBigModuleMethods(unittest.TestCase):
