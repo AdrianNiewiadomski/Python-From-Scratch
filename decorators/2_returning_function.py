@@ -32,6 +32,8 @@ def outer_function():
     return inner_function
 
 
+# The function defined inside another function is sometimes called a nested function.
+# An external function is also called an enclosing function.
 # To call inner function we must do the following:
 reference_to_inner_function = outer_function()
 reference_to_inner_function()
