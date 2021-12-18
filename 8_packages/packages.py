@@ -13,8 +13,8 @@ def main_1():
     print(my_string)
 
     # If you opened the Pyhon-From-Scratch project in the PyCharm, the some_main_script is highlighted.
-    # This is because of incorrect naming convention of the 18_packages directory.
-    # Open 18_packages directly if you want PyCharm to stop highlight some_main_script
+    # This is because of incorrect naming convention of the 8_packages directory.
+    # Open 8_packages directly if you want PyCharm to stop highlight some_main_script
     # and to start give you hints about the package.
 
     # Now you may import a fun function from some_sub_script

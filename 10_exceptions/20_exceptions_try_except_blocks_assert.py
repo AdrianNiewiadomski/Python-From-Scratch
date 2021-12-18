@@ -3,7 +3,7 @@ def my_divide_function(a, b):
 
 
 def main():
-    print('In this example it will be demonstrated what are exceptions and how to deal with them.')
+    print('In this example it will be demonstrated what are 10_exceptions and how to deal with them.')
     print('In the script above there is a simple function that performs an operation of division.')
     print('The function usually works fine. For instance')
     print('my_divide_function(1, 2) = ', my_divide_function(1, 2))
@@ -20,7 +20,7 @@ def main():
     print('\nSometimes you want to raise an exception.')
     print('For instance to warn a fellow programmer about incorrect usage of your module.')
     print('Other case may be to make sure that some requirements are met before further run of program.')
-    print('You may also use exceptions during a debug process.')
+    print('You may also use 10_exceptions during a debug process.')
     config = {
         'a': 1,
         'b': 2,
