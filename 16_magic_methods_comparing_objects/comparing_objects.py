@@ -27,7 +27,7 @@ class Bicycle:
 
 
 if __name__ == "__main__":
-    # Now let assume that you have a 2 bikes and 3 cars.
+    # Now let assume that you have 2 bikes and 3 cars.
     bike = Bicycle("blue")
     bike2 = Bicycle("blue")
     toyota = Car("Toyota", 1.8, "grey")
